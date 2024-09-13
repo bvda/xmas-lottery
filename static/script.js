@@ -1,7 +1,7 @@
-$(document).ready(function(){
-    $('#sendButton').click(function(){
+$(document).ready(function() {
+    $('#sendButton').click(function() {
         let inputText = $('#inputText').val();
-        
+
         $.ajax({
             url: '/get_data',
             type: 'POST',
