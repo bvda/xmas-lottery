@@ -1,0 +1,39 @@
+#numbers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+  background-color: lime;
+}
+
+.round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-variant-numeric: tabular-nums;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin: 2px;
+  font-weight: bold;
+}
+
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}

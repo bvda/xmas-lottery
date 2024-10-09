@@ -8,7 +8,11 @@ $(document).ready(function() {
             contentType: 'application/json',
             data: JSON.stringify({ 'input': inputText }),
             success: function(response){
-                $('#responseText').text(response.response);
+                console.log(response)
+                for(var n of response.response) {
+                    $('#numbers').append('<div class="round ' + n.color + '">' + n.number + '</div>')
+                    console.log(n)
+                }
             },
             error: function(){
                 $('#responseText').text('An error occurred.');

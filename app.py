@@ -12,7 +12,9 @@ def index():
 def get_data():
     # Extracting some data from the AJAX request
     input_data = request.json.get('input', None)
-    
+
+    # return render_template('index.html')
+
     return jsonify({'response': lottery.get_pool()})
 
     # Sending a JSON response

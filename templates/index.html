@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask AJAX Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }} " />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
@@ -11,7 +12,9 @@
     <input type="text" id="inputText" placeholder="Enter something">
     <button id="sendButton">Send via AJAX</button>
 
-    <p>Server response: <span id="responseText"></span></p>
+    <div id="numbers">
+        
+    </div>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
