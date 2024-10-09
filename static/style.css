@@ -1,8 +1,7 @@
 #numbers {
-  display: flex;
-  flex-wrap: wrap;
-  width: 33%;
-  background-color: lime;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px;
 }
 
 .round {
