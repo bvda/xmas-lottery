@@ -17,8 +17,12 @@ $(document).ready(function() {
             type: 'GET',
             contentType: 'application/json',
             success: (resp) => {
+                $('#current').empty()
+                let current = resp.response[1].at(-1)
+                console.log(current)
+                $('#current').append('<div class="roboto-mono-medium round ' + current.color + '">' + current.number + '</div>')
                 $('#numbers').empty()
-                for(var n of resp.response[1]) {
+                for(var n of resp.response[1].slice(0, -1)) {
                     $('#numbers').append('<div class="roboto-mono-medium round ' + n.color + '">' + n.number + '</div>')
                     console.log(n)
                 }
