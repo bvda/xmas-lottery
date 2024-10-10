@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask AJAX Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{{ url_for('static', filename='font/RobotoMono-Medium.ttf')}}" rel="stylesheet">
+<link href="{{ url_for('static', filename='font/Roboto-Light.ttf')}}" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }} " />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>Flask AJAX Example</h1>
-    <input type="text" id="inputText" placeholder="Enter something">
-    <button id="sendButton">Send via AJAX</button>
+    <div class="grid-container">
+        <div class="grid-item">
+            1    
+        </div>
+        <div class="grid-item">
+            <h1 class="roboto-light">XMAS LOTTERY</h1>
+            <h2>Bevismiddeltilsynet & Politiklagemyndigheden</h2>
+        </div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">
+            <button id="sendButton">Send via AJAX</button>
+        </div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">
+
     <div style="display: flex;">
         <div id="numbers">
-            
         </div>
+        <input type="hidden" id="inputText" placeholder="Enter something">
     </div>
+        </div>
+        <div class="grid-item">9</div>
+
+    </div>
+
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>

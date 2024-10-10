@@ -19,7 +19,7 @@ $(document).ready(function() {
             success: (resp) => {
                 $('#numbers').empty()
                 for(var n of resp.response[1]) {
-                    $('#numbers').append('<div class="round ' + n.color + '">' + n.number + '</div>')
+                    $('#numbers').append('<div class="roboto-mono-medium round ' + n.color + '">' + n.number + '</div>')
                     console.log(n)
                 }
                 console.log(resp)
