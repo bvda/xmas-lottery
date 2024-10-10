@@ -11,6 +11,18 @@ $(document).ready(function() {
                 $('#responseText').text('An error occurred.');
             }
         });
+        $('#clear').click(() => {
+            $.ajax({
+                url:'/clear',
+                type: 'POST',
+            
+        success: (resp) => {
+            $('#current').empty()
+            $('#numbers').empty()
+            console.log(resp)
+        
+        }})
+    })
     $('#sendButton').click(function() {
         $.ajax({
             url: '/get_draw',

@@ -14,3 +14,8 @@ class Lottery:
     self.drawn.append(drawn)
     return self.pool, self.drawn
   
+
+  def clear(self):
+    self.pool = [LotteryNumber(n, c) for c in ['red', 'green', 'blue', 'yellow'] for n in list(range(1,101))]
+    self.drawn = []
+    return self.pool, self.drawn

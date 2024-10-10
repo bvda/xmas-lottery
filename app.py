@@ -2,6 +2,7 @@ from flask import Flask, render_template, jsonify, request
 from lottery import Lottery
 
 app = Flask(__name__)
+
 lottery = Lottery()
 
 @app.route('/')
@@ -11,6 +12,11 @@ def index():
 @app.route('/get_draw', methods=['GET'])
 def get_draw():
     return jsonify({'response': lottery.draw()})
+
+@app.route('/clear', methods=['POST'])
+def clear():
+    lottery.clear()
+    return render_template('index.html')
 
 @app.route('/get_data', methods=['POST'])
 def get_data():
