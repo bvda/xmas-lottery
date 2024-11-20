@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "MountainsOfChristmas";
+  font-style: normal;
+  src: url("font/MountainsofChristmas-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  src: url("font/RobotoMono-Medium.ttf");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,7 +31,6 @@ h1 {
 #current .round {
   height: 320px;
   width: 320px;
-  border-radius: 160px;
   font-size: 7em;
   border: 12px solid white; 
 }
@@ -32,7 +43,6 @@ h1 {
   width: 60px;
   border:3px solid white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
-  border-radius: 30px;
   margin: 2px;
   font-size: 1em;
 }
@@ -47,6 +57,10 @@ h1 {
   color: white;
 }
 
+pre {
+  font-size: 0.5em;
+}
+
 .blue {
   background-color: blue;
   color: white;
@@ -59,6 +73,7 @@ h1 {
 
 .orange {
   background-color: orange;
+  color: white;
 }
 
 .roboto-mono-medium {
@@ -68,7 +83,7 @@ h1 {
 }
 
 .roboto-light {
-  font-family: "Roboto Light", sans-serif;
+  font-family: "MountainsOfChristmas", sans-serif;
 }
 
 .grid-container {
