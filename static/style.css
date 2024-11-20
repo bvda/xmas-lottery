@@ -57,6 +57,10 @@ h1 {
   color: white;
 }
 
+.orange {
+  background-color: orange;
+}
+
 .roboto-mono-medium {
   font-family: "Roboto Mono", monospace;
   font-weight: 700;
