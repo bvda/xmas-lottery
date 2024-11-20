@@ -4,3 +4,4 @@ from dataclasses import dataclass
 class LotteryNumber:
   number: int
   color: str
+  litra: str

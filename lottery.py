@@ -3,7 +3,7 @@ import random
 
 class Lottery:
   def __init__(self):
-    self.pool = [LotteryNumber(n, c) for c in ['red', 'green', 'blue', 'yellow', 'orange'] for n in list(range(1,101))]
+    self.pool = [LotteryNumber(n, c[0], c[1]) for c in [['red', 'C'], ['green', 'G'], ['blue', 'F'], ['yellow', 'A'], ['orange', 'E']] for n in list(range(1,101))]
     self.drawn = []
 
   def get_pool(self):
@@ -16,6 +16,6 @@ class Lottery:
   
 
   def clear(self):
-    self.pool = [LotteryNumber(n, c) for c in ['red', 'green', 'blue', 'yellow', 'orange'] for n in list(range(1,101))]
+    self.pool = [LotteryNumber(n, c[0], c[1]) for c in [['red', 'C'], ['green', 'G'], ['blue', 'F'], ['yellow', 'A'], ['orange', 'E']] for n in list(range(1,101))]
     self.drawn = []
     return self.pool, self.drawn

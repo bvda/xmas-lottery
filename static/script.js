@@ -11,7 +11,7 @@ function pull() {
             let current = resp.response[1].at(-1)
             console.log(current)
             $('#current').append('<div class="roboto-mono-medium round ' + current.color + '">' + 
-                '<p>Litra</p>' +
+                '<p>LITRA ' + current.litra +  '</p>' +
                 '<p> NR.' +  String(current.number).padStart(3, '0') + '</p></div>')
             $('#numbers').empty()
             for(var n of resp.response[1].slice(0, -1)) {
