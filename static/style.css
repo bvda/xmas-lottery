@@ -31,30 +31,32 @@ h1 {
 #current .round {
   height: 320px;
   width: 320px;
-  font-size: 7em;
-  border: 12px solid white; 
+  font-size: 2em;
 }
-
+p {
+  margin: 0;
+}
 .round {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 60px;
   width: 60px;
-  border:3px solid white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
   margin: 2px;
   font-size: 1em;
 }
 
 .yellow {
-  background-color: yellow;
-  color: black;
+  background-color: rgb(232, 211,86);
+  color: rgb(65,62,59);
 }
 
 .red {
-  background-color: red;
+  background-color: rgb(171, 43, 30);
   color: white;
+  color: rgb(65,62,59);
 }
 
 pre {
@@ -62,18 +64,21 @@ pre {
 }
 
 .blue {
-  background-color: blue;
+  background-color: rgb(160,182,179);
   color: white;
+  color: rgb(65,62,59);
 }
 
 .green {
-  background-color: green;
+  background-color: rgb(62,138,62);
   color: white;
+  color: rgb(65,62,59);
 }
 
 .orange {
-  background-color: orange;
+  background-color: rgb(210, 129, 12);
   color: white;
+  color: rgb(65,62,59);
 }
 
 .roboto-mono-medium {
@@ -84,6 +89,7 @@ pre {
 
 .roboto-light {
   font-family: "MountainsOfChristmas", sans-serif;
+  letter-spacing: 6pt;
 }
 
 .grid-container {
@@ -93,7 +99,6 @@ pre {
   }
   
   .grid-item {
-    border: 1px dashed lightgray;
     display: flex;
     flex-direction: column;
     justify-content: center;
