@@ -46,17 +46,15 @@ p {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
   margin: 2px;
   font-size: 1em;
+  color: rgb(32, 32, 32)
 }
 
 .yellow {
-  background-color: rgb(232, 211,86);
-  color: rgb(65,62,59);
+  background-color: rgb(254, 237, 84);
 }
 
 .red {
-  background-color: rgb(171, 43, 30);
-  color: white;
-  color: rgb(65,62,59);
+  background-color: rgb(245, 41, 68);
 }
 
 pre {
@@ -64,21 +62,15 @@ pre {
 }
 
 .blue {
-  background-color: rgb(160,182,179);
-  color: white;
-  color: rgb(65,62,59);
+  background-color: rgb(188, 216, 229);
 }
 
 .green {
-  background-color: rgb(62,138,62);
-  color: white;
-  color: rgb(65,62,59);
+  background-color: rgb(47, 155,77);
 }
 
 .orange {
-  background-color: rgb(210, 129, 12);
-  color: white;
-  color: rgb(65,62,59);
+  background-color: rgb(250, 153, 63);
 }
 
 .roboto-mono-medium {
