@@ -19,11 +19,11 @@ function pull() {
                 console.log(n)
             }
             console.log(resp)
-            count++
+            /*count++
             if(count >= 5  ) {
                 clearInterval(ticker)
                 count = 0
-            }
+            }*/
         }
     })
 }
@@ -55,7 +55,6 @@ $(document).ready(function() {
     })
     $('#sendButton').click(function() {
         pull()
-        ticker = setInterval(pull, 1000)
+        //ticker = setInterval(pull, 1000)
     });
-
 });
